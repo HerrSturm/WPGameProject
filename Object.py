@@ -34,7 +34,7 @@ class GameObject:
 
 
     """Getter Methoden für die Position, Laenge und Breite eines Objektes
-       Ermöglicht es mit .x die x Position des Objekte, mit .y die y-Position des Objektes und mit .width und .heith Laenge und Breite zu bekommen
+       Ermöglicht es mit .x die x Position des Objekte, mit .y die y-Position des Objektes und mit .width und .height Laenge und Breite zu bekommen
        Es sind keine Klammer nötig (wegen des @property)
     """
     @property
