@@ -2,3 +2,4 @@ Testdatei um die Git Befehle zu veranschaulichen. Wird nach der Einführung gel�
 
 Informatik macht spaß
 Git scheint kompliziert
+asdasd
