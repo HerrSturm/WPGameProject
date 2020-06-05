@@ -1,1 +1,4 @@
 Testdatei um die Git Befehle zu veranschaulichen. Wird nach der Einführung gelöscht.
+
+Informatik macht spaß
+Git scheint kompliziert
