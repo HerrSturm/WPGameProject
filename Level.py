@@ -2,6 +2,7 @@ from Object import *
 from Brick import *
 from MovingBrick import *
 from ObjectTypes import ObjectType
+from Stab import *
 
 class Level:
     def __init__(self):
