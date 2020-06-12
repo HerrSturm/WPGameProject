@@ -1,5 +1,5 @@
 from enum import Enum
-"""Dient der Festlegung der verschiedenen Objekttypen,
+"""Dient der Festlegung der verschiedenen Objekttypen,"""
 
 
 class ObjectType(Enum):
