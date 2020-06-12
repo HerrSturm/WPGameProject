@@ -1,4 +1,5 @@
-import pygame, sys
+import pygame
+from ObjectTypes import ObjectType
 
 scale = 10 # Skalierung der Größenangaben, alle Angaben werden mit dieser multipliziert um die Objekte mit festen Abständen erzeugen zu können
 
