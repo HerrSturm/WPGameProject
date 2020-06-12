@@ -2,10 +2,6 @@ from Object import *
 
 class Stab(GameObject):
 
-    def __init__(self, pos, size):
-        super().__init__(self.box) 
-        
-
     def update(self, gameManager):
         self.move
         self.draw

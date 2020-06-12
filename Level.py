@@ -31,5 +31,5 @@ level1 = [
             Brick((10,20),(4,2),ObjectType.BRICK),
             MovingBrick((10,14),(2,4),ObjectType.BRICK,(1,0)),
             Brick((25,14),(4,2),ObjectType.BRICK),
-            Stab((1300,400),(5,1),ObjectType.BRICKT)
+            Stab((75,75),(5,1),ObjectType.BRICK)
         ]
