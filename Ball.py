@@ -3,26 +3,26 @@ from Object import *
 class Ball(GameObject):
 
     def __init__(self, pos, size, type, direction):
-        #super().__init__(.....) Nutze die Vererbung. Die Klasse erbt von GameObject
-        directionx = direction[0]
-        directiony = direction[1]
-        directionMemory = []
+        super().__init__(pos, size, type) #Nutze die Vererbung. Die Klasse erbt von GameObject
+        self.directionx = direction[0]
+        self.directiony = direction[1]
+        self.directionMemory = []
 
     def update(self, gameManager):
-        move()
+        self.move()
 
     def draw(self,screen):
         pygame.draw.rect(screen, (0, 0, 255), self.box)
 
     def move(self):
-        self.x += directionx
-        self.y += directiony
+        self.box[0] += self.directionx
+        self.box[1] += self.directiony
         if self.x > 1400 or self.x <0:
-            directionx = directionx * -1
-        directionmemory()
+            self.directionx = self.directionx * -1
+        self.directionmemory()
 
     def collision(self, obj, gameManager):
-        directiony = directiony * -1
+        self.directiony = self.directiony * -1
 
     def directionmemory(self):
-        ory.append((self.x,self.y))
+        self.directionMemory.append((self.x,self.y))
