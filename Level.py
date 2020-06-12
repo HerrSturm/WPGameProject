@@ -2,6 +2,7 @@ from Object import *
 from Brick import *
 from MovingBrick import *
 from ObjectTypes import ObjectType
+from Ball import *
 
 class Level:
     def __init__(self):
@@ -30,4 +31,5 @@ level1 = [
             Brick((10,20),(4,2),ObjectType.BRICK),
             MovingBrick((10,14),(2,4),ObjectType.BRICK,(1,0)),
             Brick((25,14),(4,2),ObjectType.BRICK)
+            Ball((700,700),(1,1),ObjectType.BALL,(1,1))
         ]
