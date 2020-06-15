@@ -19,6 +19,8 @@ class Ball(GameObject):
         self.box[1] += self.directiony
         if self.x > 1400 or self.x <0:
             self.directionx = self.directionx * -1
+        if self.y > 700:
+            self.directiony = self.directiony * -1
         self.directionmemory()
 
     def collision(self, obj, gameManager):
