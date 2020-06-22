@@ -23,7 +23,7 @@ class Level:
 
     def update(self, screen, gameManager):
         for obj in self.objects:
-            obj.update(self, gameManager)
+            obj.update(gameManager)
             obj.draw(screen)
 
 level1 = [
