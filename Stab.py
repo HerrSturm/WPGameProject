@@ -1,16 +1,25 @@
-from Object import *
+import pygame
 
-class Stab(GameObject):
-
-    def __init__(self, pos, size):
-        #super().__init__(.....) Nutze die Vererbung. Die Klasse erbt von GameObject
-        pass
-
-    def update(self, gameManager):
-        pass
-
-    def draw(self,screen):
-        pass
+class Stab(object):
+    def __init__(self):
+        self.position = (100, 100)
+        self.laenge = 30
+        self.breite = 15
+        self.color = (50, 50, 50)
 
     def move(self):
-        pass
+        pygame.event.get()
+        pygame.mouse.get_pressed()[0]
+        position = pygame.mouse.get_pos()
+        if position[1] != 100:
+            position[1] = 100
+        while self.position > position:
+            self.position += 1
+        while self.position < position:
+            self.position -= 1
+
+
+            
+
+
+        
