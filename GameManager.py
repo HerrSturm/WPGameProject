@@ -6,6 +6,7 @@ import Level
 class GameManager:
     def __init__(self):
         self.init()
+        pygame.display.set_caption('Gans dolles Spiel')
         self.clock = pygame.time.Clock()
         self.currentLevel = Level.Level()
         self.markedForDestruction = []
