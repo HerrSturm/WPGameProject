@@ -36,7 +36,7 @@ class GameManager:
     #ruft von allen Objekten die update Funktion und die draw Funktion auf
     def updateLevelObjects(self):
         self.deleteMarkedObjects()
-        self.currentLevel.update(self.screen)
+        self.currentLevel.update(self.screen, self)
 
     #Überprüft Kollisionen von allen Obbjekten mit einander
     #ruft im Falle einer Kollision die Kollisionsfunktion des Objektes auf

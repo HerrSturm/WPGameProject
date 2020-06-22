@@ -2,6 +2,7 @@ from Object import *
 from Brick import *
 from MovingBrick import *
 from ObjectTypes import ObjectType
+from Ball import *
 
 class Level:
     def __init__(self):
@@ -20,14 +21,15 @@ class Level:
     def loadLevel(self):
         self.objects = self.levelList[self.currentLevel]
 
-    def update(self, screen):
+    def update(self, screen, gameManager):
         for obj in self.objects:
-            obj.update(self)
+            obj.update(self, gameManager)
             obj.draw(screen)
 
 level1 = [
             Brick((10,10),(4,2),ObjectType.BRICK),
             Brick((10,20),(4,2),ObjectType.BRICK),
             MovingBrick((10,14),(2,4),ObjectType.BRICK,(1,0)),
-            Brick((25,14),(4,2),ObjectType.BRICK)
+            Brick((25,14),(4,2),ObjectType.BRICK),
+            Ball((70,70),(1,1),ObjectType.BALL,(-5,-5))
         ]
