@@ -29,6 +29,6 @@ class Level:
 level1 = [
             Brick((10,10),(4,2),ObjectType.BRICK),
             Brick((10,20),(4,2),ObjectType.BRICK),
-            MovingBrick((10,14),(2,4),ObjectType.BRICK,(1,0)),
+            MovingBrick((10,14),(2,4),ObjectType.BRICK,[1,0]),
             Brick((25,14),(4,2),ObjectType.BRICK)
         ]

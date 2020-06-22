@@ -11,9 +11,9 @@ class MovingBrick(Brick):
         self.box[0] += self.dir[0]
         self.box[1] += self.dir[1]
         if self.box[0] > gameManager.screenSize[0] or self.box[0] < 0:
-            self.dir[0] * (-1)
+            self.dir[0] = self.dir[0] * (-1)
         if self.box[1] > gameManager.screenSize[1] or self.box[1] < 0:
-            self.dir[1] * (-1)
+            self.dir[1] = self.dir[1] * (-1)
 
 #wenn der MovingBrick mit etwas kollidiert fragt er ab, was es ist
 #ist es der Ball, so wird der MovingBrick auf die Liste markedForDestruction gesetzt
@@ -24,8 +24,9 @@ class MovingBrick(Brick):
 #        else:
 #            self.dir[0] * (-1)
 #            self.dir[1] * (-1)
-        self.dir[0] * (-1)
-        self.dir[1] * (-1)
+        self.dir[0] = self.dir[0] * (-1)
+        self.dir[1] = self.dir[1] * (-1)
+
 
     def update(self, gameManager):
         self.move(gameManager)
