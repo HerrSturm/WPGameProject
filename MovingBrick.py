@@ -1,7 +1,7 @@
 from Brick import *
 
 class MovingBrick(Brick):
-    def __init__(self, pos, size, type, dir = [0,0]):
+    def __init__(self, pos, size, type, dir = [1,0]):
         super().__init__(pos, size, type)
         self.dir = dir
 
@@ -19,11 +19,13 @@ class MovingBrick(Brick):
 #ist es der Ball, so wird der MovingBrick auf die Liste markedForDestruction gesetzt
 #kollidiert er mit einem anderen Objekt, so bewegt er sich zurrück
     def collision(self, obj, gameManager):
-        if obj.ObjectType == BALL:
-            gameManager.deleteObj(self)
-        else:
-            self.dir[0] * (-1)
-            self.dir[1] * (-1)
+#        if obj.ObjectType == BALL:
+#            gameManager.deleteObj(self)
+#        else:
+#            self.dir[0] * (-1)
+#            self.dir[1] * (-1)
+        self.dir[0] * (-1)
+        self.dir[1] * (-1)
 
     def update(self, gameManager):
         self.move(gameManager)
